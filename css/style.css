@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/opensans.woff) format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/opensans.woff2) format('woff2');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 2px solid #7943A4;
+    transition: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 2px solid #7943A4;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    max-height: 100px;
+    background-color: #000000;
+}
+
+.header_container {
+    display: flex;
+    align-items: stretch;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header_nav {
+    margin-top: -10px;
+    align-items: center;
+    margin-left: 180px;
+}
+
+.header_list {
+    display: flex;
+    align-items: center;
+}
+
+.header_list_item:not(:first-child) {
+    margin-left: 65.5px;
+}
+
+.header_list_link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+.header_list_link:hover {
+    color: #7943A4;
+}
+
+.header_button {
+    margin-left: 270px;
+    margin-top: -8px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+.header_button:hover {
+    color: #7943A4;
+}
+
+.enter_img svg path {
+    transition: 0.5s ease-in-out;
+}
+
+.enter_img:hover svg path {
+    fill: #7943A4;
+}
+
+.header_menu {
+    margin-top: -6.6px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header_menu_nav {
+    display: flex;
+}
+
+.header_menu_list {
+    margin-left: -15px
+}
+
+.header_menu_list > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.header_menu_list > li:last-child {
+    margin-right: 0;
+}
+
+.header_menu_nav a {
+    display: block;
+    padding: 10px 15px;
+    transition: .5s linear;
+}
+
+.header_submenu_list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 13px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.header_menu_nav .header_submenu_list {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header_menu_nav ul li:hover .header_submenu_list {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header_submenu_link {
+    font-size: 16px;
+    width: 73%;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.header_menu_arrow svg path {
+    transition: 0.5s ease-in-out;
+}
+
+.header_menu_arrow:hover svg path {
+    stroke: #7943A4;
+}
+
+.header_button_search {
+    background-color: transparent;
+    border: none;
+    margin-top: 5px;
+    margin-left: 295px;
+}
+
+.header_button_search_img svg rect, .header_button_search_img svg path {
+    transition: 0.5s ease-in-out;
+}
+
+.header_button_search_img:hover svg rect {
+    fill: #7943A4;
+}
+
+.header_button_search_img:hover svg path {
+    fill: #7943A4;
+}
+
+.header_input_search {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 22px;
+    height: 26px;
+    font-size: 18px;
+    color: #7943a4;
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+.header_input_search:hover {
+    border-bottom: 1px solid #7943a4;
+}
+
+.header_menu_link {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+.header_menu_link:hover {
+    color: #7943A4;
+}
+
+.header_menu_item {
+    margin-top: -4px;
+}
+
+.header_menu_item:not(:first-child) {
+    margin-left: 42px;
+}
+
+.header_input_search::placeholder {
+    color: #ffffff;
+}
+
