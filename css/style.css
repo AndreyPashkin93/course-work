@@ -60,7 +60,7 @@ button:focus {
 .flex {
     display: flex;
 }
-    
+
 .header-container {
     padding-top: 20px;
     padding-bottom: 23px;
@@ -69,20 +69,19 @@ button:focus {
 
 .header__nav {
     align-items: center;
-    margin-left: 180px;
-    
+    padding: 0 180px;
 }
 
-.header__list {
+.nav__list {
     display: flex;
     align-items: center;
 }
 
-.header__item:not(:first-child) {
+.nav__item:not(:first-child) {
     margin-left: 65.5px;
 }
 
-.header__link {
+.nav__link {
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
@@ -90,11 +89,11 @@ button:focus {
     transition: color 0.5s ease-in-out;
 }
 
-.header__link:hover {
+.nav__link:hover {
     color: #C283F3;
 }
 
-.header__link:active {
+.nav__link:active {
     color: #7943A4;
 }
 
@@ -117,19 +116,19 @@ button:focus {
     color: #7943A4;
 }
 
-.enter__img svg path {
+.header__button--svg svg path {
     transition: fill 0.5s ease-in-out;
 }
 
-.enter__img:hover svg path {
+.header__button--svg:hover svg path {
     fill: #C283F3;
 }
 
-.enter__img:active svg path {
+.header__button--svg:active svg path {
     fill: #7943A4;
 }
 
-.menu-container {
+.menu {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -145,7 +144,8 @@ button:focus {
 
 .menu__nav a {
     display: block;
-    padding: 7px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     transition: .5s linear;
 }
 
@@ -176,9 +176,11 @@ button:focus {
 
 .submenu__link {
     font-size: 16px;
+    line-height: 19px;
     width: 73%;
     color: #fff;
     background-repeat: no-repeat;
+    padding-left: 14px;
     margin: 40px;
 }
 
@@ -263,3 +265,9 @@ button:focus {
 .simplebar-content-wrapper {
     overflow: auto;
   }
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+  }
+
+
