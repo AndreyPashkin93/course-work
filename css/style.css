@@ -47,10 +47,6 @@ button {
     cursor: pointer;
 }
 
-button:focus {
-    outline: 2px solid #7943A4;
-}
-
 .container {
     max-width: 1640px;
     margin: 0 auto;
@@ -75,10 +71,11 @@ button:focus {
 .nav__list {
     display: flex;
     align-items: center;
+    padding-right: 99.5px;
 }
 
 .nav__item:not(:first-child) {
-    margin-left: 65.5px;
+    margin-left: 66px;
 }
 
 .nav__link {
@@ -99,13 +96,17 @@ button:focus {
 
 .header__button {
     padding: 0;
-    margin-left: auto;
+    margin: auto;
     align-items: center;
     font-size: 18px;
     background-color: transparent;
     border: none;
     color: #fff;
     transition: color 0.5s ease-in-out;
+}
+
+.header__button:focus {
+    outline: 2px solid #7943A4;
 }
 
 .header__button:hover {
@@ -146,7 +147,6 @@ button:focus {
     display: block;
     padding-top: 7px;
     padding-bottom: 7px;
-    transition: .5s linear;
 }
 
 .submenu__list {
@@ -201,11 +201,20 @@ button:focus {
     border: none;
 }
 
+.button__search:focus {
+    outline: none;
+}
+
 .search__form {
     margin-top: 25px;
     margin-left: 310px;
 }
 
+form:focus-within {
+    border: 2px solid #7943a4;
+    width: 250px;
+    height: 38px;
+}
 
 .button__search--img svg rect, .button__search--img svg path {
     transition: fill 0.5s ease-in-out;
@@ -251,7 +260,7 @@ button:focus {
 }
 
 .menu__item:not(:first-child) {
-    margin-left: 72px;
+    margin-left: 73px;
 }
 
 .header__search::placeholder {

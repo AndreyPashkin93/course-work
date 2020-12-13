@@ -141,7 +141,7 @@
 .simplebar-scrollbar:before {
   position: absolute;
   content: '';
-  background: black;
+  background: #000;
   width: 2px;
   border-radius: 7px;
   left: 0;
@@ -152,7 +152,7 @@
 
 .simplebar-scrollbar.simplebar-visible:before {
   /* When hovered, remove all transitions from drag handle */
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0s linear;
 }
 
