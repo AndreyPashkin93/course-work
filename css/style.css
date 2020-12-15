@@ -180,7 +180,7 @@ button {
     color: #fff;
     background-repeat: no-repeat;
     padding: 15px;
-    margin: 40px;
+    margin: 34px;
 }
 
 .menu__arrow svg path {
@@ -212,7 +212,7 @@ button {
 form:focus-within {
     outline: 2px solid #7943a4;
     width: 250px;
-    height: 30px;
+    height: 33px;
 }
 
 .button__search--img svg rect, .button__search--img svg path {

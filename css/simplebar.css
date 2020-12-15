@@ -198,7 +198,7 @@
   position: fixed;
   opacity: 0;
   visibility: hidden;
-  height: 500px;
+  height: 1000px;
   width: 500px;
   overflow-y: hidden;
   overflow-x: scroll;
