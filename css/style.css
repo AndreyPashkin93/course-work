@@ -74,7 +74,7 @@ button {
     padding-bottom: 23px;
     background-color: #000;
     position: relative;
-    z-index: 50;
+    z-index: 50000;
 }
 
 .header__nav {
