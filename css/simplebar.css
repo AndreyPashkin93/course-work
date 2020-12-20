@@ -113,7 +113,7 @@
 .simplebar-track {
   z-index: 1;
   position: absolute;
-  background: #9D5CD0;
+  background: #000;
   margin-top: 35px;
   right: 15px;
   bottom: 35px;
@@ -141,7 +141,7 @@
 .simplebar-scrollbar:before {
   position: absolute;
   content: '';
-  background: #000;
+  background: #9D5CD0;
   width: 2px;
   border-radius: 7px;
   left: 0;
