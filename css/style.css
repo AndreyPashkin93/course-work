@@ -197,7 +197,7 @@ button {
     color: #fff;
     background-repeat: no-repeat;
     padding: 15px;
-    margin: 37px;
+    margin: 38px;
 }
 
 .submenu__link:hover {
@@ -388,8 +388,10 @@ form:focus-within {
 
 .hero__button:hover {
     border: 2px solid #C283F3;
+    transition: border 0.5s ease-in-out;
 }
 
 .hero__button:active {
     background-color: #7943A4;
+    transition: background-color 0.5s ease-in-out;
 }
