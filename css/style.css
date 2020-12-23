@@ -193,11 +193,26 @@ button {
 .submenu__link {
     font-size: 16px;
     line-height: 19px;
-    width: 73%;
+    width: 100%;
     color: #fff;
     background-repeat: no-repeat;
     padding: 15px;
-    margin: 38px;
+}
+
+.submenu__item {
+    margin: 38px
+}
+
+.submenu__item:first-child {
+    margin-top: 2px;
+}
+
+.submenu__item:last-child {
+    margin-bottom: 2px;
+}
+
+.submenu__item--min {
+    margin: 38px !important;
 }
 
 .submenu__link:hover {
@@ -285,10 +300,6 @@ form:focus-within {
 
 .header__search::placeholder {
     color: #fff;
-}
-
-.custom__scroll {
-    height: 300px;
 }
 
 .simplebar-content-wrapper {
@@ -379,6 +390,7 @@ form:focus-within {
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.85px;
+    transition: 0.5s ease-in-out;
 }
 
 .hero__button:focus {
