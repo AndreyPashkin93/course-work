@@ -167,17 +167,25 @@ button {
 
 .submenu__list {
     position: absolute;
-    top: 100%;
+    top: 55px;
     left: 0;
     z-index: 1000;
     width: 300px;
     max-height: 250px;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 16px;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+}
+
+.submenu__list:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -30px;
+    height: 30px;
 }
 
 .menu__nav .submenu__list {
@@ -193,7 +201,7 @@ button {
 .submenu__link {
     font-size: 16px;
     line-height: 19px;
-    width: 100%;
+    width: 98%;
     color: #fff;
     background-repeat: no-repeat;
     padding: 15px;
@@ -347,14 +355,14 @@ form:focus-within {
 .hero__image {
     position: absolute;
     bottom: 0;
-	  left: 0;
-	  z-index: 1;
+	left: 0;
+	z-index: 1;
 }
 
 .hero__container {
-    padding-top: 240px;
+    padding-top: 160px;
     position: relative;
-	  z-index: 50;
+	z-index: 50;
 }
 
 .hero__title {
