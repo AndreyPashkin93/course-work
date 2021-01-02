@@ -207,8 +207,38 @@ button {
     padding: 15px;
 }
 
+.simplebar-track {
+    background: #000;
+    margin-top: 36px;
+    right: 15px;
+    bottom: 36px;
+}
+
+.simplebar-scrollbar:before {
+    background: #9D5CD0;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical {
+    width: 2px;
+}
+
+.simplebar-mask {
+    margin: 36px;
+}
+
 .submenu__item {
-    margin: 38px
+    margin-left: 2px;
+}
+
+.submenu__item:not(:last-child) {
+    margin-bottom: 38px;
 }
 
 .submenu__item:first-child {
@@ -355,14 +385,14 @@ form:focus-within {
 .hero__image {
     position: absolute;
     bottom: 0;
-	left: 0;
-	z-index: 1;
+	  left: 0;
+	  z-index: 1;
 }
 
 .hero__container {
-    padding-top: 160px;
+    padding-top: 240px;
     position: relative;
-	z-index: 50;
+	  z-index: 50;
 }
 
 .hero__title {
@@ -414,4 +444,15 @@ form:focus-within {
 .hero__button:active {
     background-color: #7943A4;
     transition: background-color 0.5s ease-in-out;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
 }
