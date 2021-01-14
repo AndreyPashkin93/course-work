@@ -456,3 +456,19 @@ form:focus-within {
     border: 0;
     clip: rect(0 0 0 0)
 }
+
+.about__container {
+    padding-top: 79px;
+}
+
+.about__title {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: normal;
+}
+
+.about__text {
+    width: 1080px;
+    font-size: 16px;
+    line-height: 32px;
+}
